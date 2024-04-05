@@ -10,6 +10,7 @@ import CastorOil from './Screen/Products/CastorOil';
 import CommercialGrade from './Screen/Products/CommercialGrade';
 import RefinedGrade from './Screen/Products/RefinedGrade';
 import ColdPressed from './Screen/Products/ColdPressed';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
           element={<ColdPressed />}
         />
       </Routes>
+      <Footer />
     </Router>
   );
 }
