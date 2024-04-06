@@ -40,7 +40,7 @@ const Products = () => {
           satisfaction to our customers.
         </p>
       </div>
-      <div className='md:flex gap-5 p-3 '>
+      <div className='md:flex gap-5 p-5 '>
         {BlogData.map(
           (item, index) =>
             index < 2 && (
