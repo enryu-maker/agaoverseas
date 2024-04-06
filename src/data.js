@@ -66,7 +66,7 @@ export const AboutNavLinks = [
 export const BlogData = [
   {
     title: 'Recent post Title',
-    img: 'https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    img: 'slider-3.webp',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
@@ -74,7 +74,7 @@ export const BlogData = [
   },
   {
     title: 'Recent post Title',
-    img: 'https://images.pexels.com/photos/257092/pexels-photo-257092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    img: 'castor-oil-slide2.webp',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
