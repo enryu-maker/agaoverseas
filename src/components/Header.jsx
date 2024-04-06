@@ -9,30 +9,21 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [hide, setHide] = useState({
-    opacity: 0,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.43, 0.13, 0.23, 0.96],
-    },
-  });
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-    setHide({
-      opacity: isOpen ? 1 : 0,
-      x: isOpen ? 0 : 400,
-      transition: {
-        duration: 0.5,
-        ease: [0.43, 0.13, 0.23, 0.96],
-      },
-    });
   };
 
   return (
     <div className='flex items-center justify-between px-10 '>
-      <div className=' flex items-center p-2 uppercase  '>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.25 }}
+        whileHover={{
+          rotate: 60,
+        }}
+        className=' flex items-center p-2 uppercase  '>
         <NavLink to='/'>
           <img
             src={'Logo.png'}
@@ -40,7 +31,7 @@ const Header = () => {
             className='w-16 h-16'
           />
         </NavLink>
-      </div>
+      </motion.div>
       <div className='hidden md:flex  items-center gap-10 font-Montserrat font-light '>
         <NavLink
           className='headerLink'
@@ -108,9 +99,16 @@ const Header = () => {
           to='/contact'>
           Contact
         </NavLink>
-        <div className='flex items-center cursor-pointer border rounded-full border-cyan-400 hover:bg-[#19b8f1] '>
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.25 }}
+          whileHover={{
+            rotate: 60,
+          }}
+          className='flex items-center cursor-pointer border rounded-full border-cyan-400 hover:bg-[#19b8f1] '>
           <FaPaperPlane className='text-[#19b8f1] w-8 h-8 p-2 hover:text-white ' />
-        </div>
+        </motion.div>
       </div>
       {/* mobile nav */}
       {isOpen && (
@@ -210,7 +208,11 @@ const Header = () => {
       )}
 
       {/* Icons */}
-      <div className='md:hidden flex gap-2'>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.25 }}
+        className='md:hidden flex gap-2'>
         <div className='flex items-center cursor-pointer border rounded-full border-cyan-400 hover:bg-[#19b8f1] '>
           <FaPaperPlane className='text-[#19b8f1] w-8 h-8 p-2 hover:text-white ' />
         </div>
@@ -223,7 +225,7 @@ const Header = () => {
             )}
           </button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
