@@ -164,7 +164,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className='absolute top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[300px]  text-sm  p-1  hidden child bg-white	'>
+              <div className='absolute  top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[300px]  text-sm  p-1  hidden child bg-white	'>
                 {ProductsNavLinks.map((nav, index) => (
                   <>
                     <NavLink
