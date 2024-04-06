@@ -16,32 +16,20 @@ const Header = () => {
     <div className='flex items-center justify-around '>
       <div className=' flex items-center gap-5 p-2 uppercase text-3xl font-semibold font-Montserrat'>
         <NavLink to='/'>
-          <img
-            src={'Logo.png'}
-            alt='Logo'
-            className='w-16 h-16'
-          />
+          <img src={'Logo.png'} alt='Logo' className='w-16 h-16' />
         </NavLink>
         Aga Overseas
       </div>
       <div className='flex items-center gap-10 font-Montserrat font-light '>
         <NavLink>Home</NavLink>
         <NavLink>About</NavLink>
-        <ul className='relative'>
+        <ul className='relative parent cursor-pointer'>
           Products
-          {/* {ProductsNavLinks.map((item, index) => {
-            return (
-              <li
-                key={index}
-                className='flex flex-col '>
-                <NavLink
-                  to={item.path}
-                  className=' text-sm mt-5 '>
-                  {item.name}
-                </NavLink>
-              </li>
-            );
-          })} */}
+          <div className='absolute flex flex-col w-[300px] gap-5 mt-2 hidden child'>
+            {ProductsNavLinks.map((nav) => (
+              <li className='flex '>{nav.name}</li>
+            ))}
+          </div>
         </ul>
         <NavLink>Step Order</NavLink>
         <NavLink>Blog</NavLink>
