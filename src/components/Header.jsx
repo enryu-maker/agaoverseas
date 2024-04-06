@@ -16,30 +16,39 @@ const Header = () => {
     <div className='flex items-center justify-around '>
       <div className=' flex items-center gap-5 p-2 uppercase text-3xl font-semibold font-Montserrat'>
         <NavLink to='/'>
-          <img src={'Logo.png'} alt='Logo' className='w-16 h-16' />
+          <img
+            src={'Logo.png'}
+            alt='Logo'
+            className='w-16 h-16'
+          />
         </NavLink>
         Aga Overseas
       </div>
       <div className='flex items-center gap-10 font-Montserrat font-light '>
-        <NavLink>Home</NavLink>
-        <NavLink>About</NavLink>
-        <ul className='relative parent cursor-pointer'>
+        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/about'>About</NavLink>
+        <ul className='relative parent cursor-pointer flex gap-10'>
           Products
-          <div className='absolute flex flex-col w-[300px] gap-5 mt-2 hidden child'>
-            {ProductsNavLinks.map((nav) => (
-              <li className='flex '>{nav.name}</li>
+          <div className='absolute top-5 left-[-25px] flex items-center justify-center flex-col w-[250px]  text-sm p-2  hidden child bg-red-400	'>
+            {ProductsNavLinks.map((nav, index) => (
+              <NavLink
+                key={index}
+                to={nav.path}
+                className=''>
+                {nav.name}
+              </NavLink>
             ))}
           </div>
         </ul>
-        <NavLink>Step Order</NavLink>
-        <NavLink>Blog</NavLink>
-        <NavLink>FAQ</NavLink>
-        <NavLink>Contact</NavLink>
+        <NavLink to='/services'>Step Order</NavLink>
+        <NavLink to='/blog'>Blog</NavLink>
+        <NavLink to='/faq'>FAQ</NavLink>
+        <NavLink to='/contact'>Contact</NavLink>
         {/* Icons */}
-        <div className='flex items-center'>
+        <div className='flex items-center cursor-pointer'>
           <FaPaperPlane />
         </div>
-        <div className='flex items-center'>
+        <div className='md:hidden flex items-center '>
           <button onClick={toggleNavbar}>
             {isOpen ? <RxCross2 /> : <IoMenu />}
           </button>
