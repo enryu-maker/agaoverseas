@@ -47,3 +47,18 @@ export const ProductsNavLinks = [
     path: '/products/coldpressed',
   },
 ];
+
+export const AboutNavLinks = [
+  {
+    name: 'Overview',
+    path: '/products/castor',
+  },
+  {
+    name: 'Our Vision',
+    path: '/products/commercial',
+  },
+  {
+    name: 'Our Infrastructure',
+    path: '/products/refined',
+  },
+];
