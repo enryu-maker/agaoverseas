@@ -24,7 +24,7 @@ const Products = () => {
       initial='hidden'
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className='flex items-center  max-w-full flex-col md:justify-between p-10  '>
+      className='flex items-center  max-w-full flex-col md:justify-between p-10 '>
       <div className='flex flex-col items-center justify-center gap-3 '>
         {/* Recent Post  */}
         <h1 className=' text-3xl font-Montserrat text-cyan-500  '>
@@ -39,6 +39,9 @@ const Products = () => {
           as castor oil suppliers but suppliers of quality, excellence, and
           satisfaction to our customers.
         </p>
+        <button className='mt-5  uppercase flex bg-white hover:bg-cyan-800 hover:text-white text-cyan-800 font-semibold  py-2 px-4 border border-cyan-500 transition-all ease-in-out delay-75 duration-75  rounded-full'>
+          Explore All Products
+        </button>
       </div>
       <div className='md:flex gap-5 p-5 '>
         {BlogData.map(

@@ -11,6 +11,7 @@ import CommercialGrade from './Screen/Products/CommercialGrade';
 import RefinedGrade from './Screen/Products/RefinedGrade';
 import ColdPressed from './Screen/Products/ColdPressed';
 import Footer from './components/Footer';
+import Product from './Screen/Products/Product';
 
 function App() {
   return (
@@ -26,6 +27,12 @@ function App() {
         <Route
           path='/about'
           element={<About />}
+        />
+      </Routes>
+      <Routes>
+        <Route
+          path='/products'
+          element={<Product />}
         />
       </Routes>
       <Routes>

@@ -1,5 +1,3 @@
-import { MdLocationPin } from 'react-icons/md';
-import { LuClock10 } from 'react-icons/lu';
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
@@ -23,23 +21,23 @@ const Card = (props) => {
       }}
       initial='hidden'
       animate={mainControls}
-      transition={{ duration: 0.5, delay: 0.25 }}
-      className='shadow'>
-      <img
-        src={props.img}
-        alt={props.title}
-        className='w-full h-[249.59px] object-cover  '
-      />
-      <div className='flex flex-col p-5 gap-2 '>
-        <h1 className='text-lg font-semibold'>{props.title}</h1>
+      transition={{ duration: 0.5, delay: 0.25 }}>
+      <motion.div
+        whileHover={{ scale: 0.85 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 5 }}>
+        <img
+          src={props.img}
+          alt={props.title}
+          className='w-full h-[249.59px] object-cover rounded-xl cursor-pointer '
+        />
+      </motion.div>
 
-        <p className='text-sm text-wrap text-slate-500'>
+      <div className='flex flex-col p-5 gap-2 '>
+        <p className=' text-slate-400'>{props.time}</p>
+        <p className='text-lg font-Noto text-left text-slate-500 hover:text-cyan-500 cursor-pointer'>
           {props.description}...
         </p>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: 'spring', stiffness: 400, damping: 5 }}
-          className=' w-22 bg-transparent hover:bg-cyan-500 text-cyan-700 font-semibold hover:text-white py-2 px-4 border border-cyan-500 hover:border-transparent rounded'>
+        <motion.button className='flex hover:text-cyan-500 '>
           Read More
         </motion.button>
       </div>

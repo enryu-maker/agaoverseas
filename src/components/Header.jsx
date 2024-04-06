@@ -46,22 +46,22 @@ const Header = () => {
 
           <div className='absolute top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  hidden child bg-white	'>
             {AboutNavLinks.map((nav, index) => (
-              <>
+              <div key={index}>
                 <NavLink
-                  key={index}
                   to={nav.path}
                   className='flex items-center mt-5 mb-5 headerLink font-medium'>
                   {nav.name}
                 </NavLink>
                 <hr />
-              </>
+              </div>
             ))}
           </div>
         </ul>
 
         <ul className='relative parent cursor-pointer flex items-center   '>
           <div className='headerLink flex items-center gap-2'>
-            Products
+            <NavLink to={'/products'}>Products</NavLink>
+
             <BsChevronCompactDown className=' font-light' />
           </div>
 

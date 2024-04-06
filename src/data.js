@@ -1,33 +1,37 @@
-// export const NavLinks = [
-//   {
-//     name: 'Home',
-//     path: '/',
-//   },
-//   {
-//     name: 'About',
-//     path: '/about',
-//   },
-//   {
-//     name: 'Products',
-//   },
+import { FaFacebookF, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
-//   {
-//     name: 'Step Order',
-//     path: '/services',
-//   },
-//   {
-//     name: 'Blog',
-//     path: '/blog',
-//   },
-//   {
-//     name: 'FAQ',
-//     path: '/faq',
-//   },
-//   {
-//     name: 'Contact',
-//     path: '/contact',
-//   },
-// ];
+export const NavLinks = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'About',
+    path: '/about',
+  },
+  {
+    name: 'Products',
+    path: '/products',
+  },
+
+  {
+    name: 'Step Order',
+    path: '/services',
+  },
+  {
+    name: 'Blog',
+    path: '/blog',
+  },
+  {
+    name: 'FAQ',
+    path: '/faq',
+  },
+  {
+    name: 'Contact',
+    path: '/contact',
+  },
+];
 
 export const ProductsNavLinks = [
   {
@@ -63,6 +67,13 @@ export const AboutNavLinks = [
   },
 ];
 
+// let today = new Date();
+// let dd = String(today.getDate()).padStart(2, '0');
+// let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+// let yyyy = today.getFullYear();
+// today = dd + '/' + mm + '/' + yyyy;
+let today = new Date().toUTCString().slice(5, 16);
+
 export const BlogData = [
   {
     title: 'Recent post Title',
@@ -70,7 +81,7 @@ export const BlogData = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
-    time: 'at 5.00 pm - 7.30 pm',
+    time: today,
   },
   {
     title: 'Recent post Title',
@@ -78,7 +89,7 @@ export const BlogData = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
-    time: 'at 5.00 pm - 7.30 pm',
+    time: today,
   },
   {
     title: 'Recent post Title',
@@ -86,7 +97,7 @@ export const BlogData = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
-    time: 'at 5.00 pm - 7.30 pm',
+    time: today,
   },
   {
     title: 'Recent post Title',
@@ -94,7 +105,7 @@ export const BlogData = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
-    time: 'at 5.00 pm - 7.30 pm',
+    time: today,
   },
   {
     title: 'Recent post Title',
@@ -102,7 +113,7 @@ export const BlogData = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
-    time: 'at 5.00 pm - 7.30 pm',
+    time: today,
   },
   {
     title: 'Recent post Title',
@@ -110,6 +121,37 @@ export const BlogData = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry',
     location: '25 NewYork City',
-    time: 'at 5.00 pm - 7.30 pm',
+    time: today,
+  },
+];
+
+export const ContactData = [
+  {
+    address:
+      'Office No 8.MEZZAINNE FLOOR JAGADISH SANKUL Near KBT CIRCLE, THATTE NAGAR, GANGAPUR ROAD, NASHIK, Maharashtra 422005',
+    phone: '+91 8830025846',
+    email: 'info@agaoverseas.com',
+    socialLinks: [
+      {
+        icon: FaFacebookF,
+        bg: '#316FF6',
+        url: 'https://www.facebook.com/',
+      },
+      {
+        icon: FaXTwitter,
+        bg: '#000',
+        url: 'https://www.twitter.com/',
+      },
+      {
+        icon: FaLinkedinIn,
+        bg: '#039FDB',
+        url: 'https://www.linkedin.com/',
+      },
+      {
+        icon: FaPinterestP,
+        bg: '#E60023',
+        url: 'https://www.pinterest.com/',
+      },
+    ],
   },
 ];

@@ -80,7 +80,7 @@ const Hero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 0.8, delay: 0.8 }}
               className='absolute  left-10  top-44 '>
-              <p className='mt-5 md:text-4xl font-light  text-center text-black'>
+              <p className='mt-5 md:text-4xl font-light text-center text-black'>
                 Comprehensive Range of Castor Oil Products for Diverse
                 Industries
               </p>
@@ -96,7 +96,7 @@ const Hero = () => {
                   ease: 'easeInOut',
                   repeatType: 'loop',
                 }}
-                className=' mt-5 flex  bg-white uppercase bg-transparent hover:border-2 text-cyan-800 font-semibold hover:text-cyan-700 py-2 px-4 border border-cyan-500  rounded-full'>
+                className=' mt-5 md:flex  bg-white uppercase bg-transparent hover:border-2 text-cyan-800 font-semibold hover:text-cyan-700 py-2 px-4 border border-cyan-500  rounded-full'>
                 Explore More
               </motion.button>
             </motion.div>
@@ -108,11 +108,11 @@ const Hero = () => {
               alt=''
             />
             <motion.div
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ ease: 'linear', duration: 0.8, delay: 0.8 }}
+              transition={{ ease: 'linear', duration: 1, delay: 1 }}
               className='absolute  left-10 top-44 '>
-              <p className='mt-5 flex w-110  md:text-4xl font-light text-left text-black'>
+              <p className='mt-5 flex w-110  md:text-4xl font-light md:text-left text-black'>
                 Paving a Sustainable Path in the Castor World
               </p>
               <motion.button
@@ -127,7 +127,7 @@ const Hero = () => {
                   ease: 'easeInOut',
                   repeatType: 'loop',
                 }}
-                className='  mt-5 flex bg-white hover:border-2 text-cyan-800 font-semibold hover:text-cyan-700 py-2 px-4 border border-cyan-500  rounded-full'>
+                className='  mt-5 md:flex bg-white hover:border-2 text-cyan-800 font-semibold hover:text-cyan-700 py-2 px-4 border border-cyan-500  rounded-full'>
                 View Resources
               </motion.button>
             </motion.div>

@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       Montserrat: ['Montserrat', 'sans-serif'],
+      Noto: ['Noto Serif', 'sans-serif'],
     },
   },
   plugins: [],
