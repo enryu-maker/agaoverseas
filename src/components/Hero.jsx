@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 // Import Swiper styles
@@ -49,8 +49,8 @@ const Hero = () => {
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 1, delay: 0.25 }}
-              className='absolute top-56  left-10 right-10 flex flex-col items-center justify-center'>
-              <p className='mt-5 md:text-4xl font-semibold text-center flex text-black drop-shadow-md '>
+              className='absolute top-56  left-10 font-Noto right-10 flex flex-col items-center justify-center'>
+              <p className='mt-5 md:text-4xl font-light text-center flex text-black drop-shadow-md '>
                 <span className=' text-sky-500'>AGA</span> OVERSEAS PVT. LTD.
               </p>
               <motion.button
@@ -79,8 +79,8 @@ const Hero = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 0.8, delay: 0.8 }}
-              className='absolute  left-10  top-44 '>
-              <p className='mt-5 md:text-4xl font-light text-center text-black'>
+              className='absolute font-Noto left-10  top-44 '>
+              <p className='mt-5 md:text-4xl font-light  w-96 text-left text-black'>
                 Comprehensive Range of Castor Oil Products for Diverse
                 Industries
               </p>
@@ -111,8 +111,8 @@ const Hero = () => {
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 1, delay: 1 }}
-              className='absolute  left-10 top-44 '>
-              <p className='mt-5 flex w-110  md:text-4xl font-light md:text-left text-black'>
+              className='absolute font-Noto  left-10 top-44 '>
+              <p className='mt-5 flex w-96  md:text-4xl font-light md:text-left text-black'>
                 Paving a Sustainable Path in the Castor World
               </p>
               <motion.button
