@@ -55,7 +55,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
     <title>AGO OVERSEAS</title>
+    <style>
+      body > .skiptranslate {
+        display: none;
+      }
+
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0rem !important;
+      }
+      @media print {
+        #google_translate_element {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
