@@ -15,7 +15,6 @@ import AboutOverview from './Screen/about/AboutOverview';
 import OurVision from './Screen/about/OurVision';
 import React, { useState, useEffect } from 'react';
 import LoadingScreen from './components/LoadingScreen';
-// import scooby from './sc1.png';
 
 function App() {
   const [loading, setLoading] = useState(true);
