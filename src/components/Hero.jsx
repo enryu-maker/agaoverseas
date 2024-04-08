@@ -79,8 +79,8 @@ const Hero = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 0.8, delay: 0.8 }}
-              className='absolute font-Noto left-10  top-44 '>
-              <p className='mt-5 md:text-4xl font-light  w-96 text-left text-black'>
+              className='absolute font-Noto left-10 right-10 top-44 '>
+              <p className='mt-5 md:text-4xl font-light  md:w-96 text-center text-black'>
                 Comprehensive Range of Castor Oil Products for Diverse
                 Industries
               </p>
@@ -111,8 +111,8 @@ const Hero = () => {
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 1, delay: 1 }}
-              className='absolute font-Noto  left-10 top-44 '>
-              <p className='mt-5 flex w-96  md:text-4xl font-light md:text-left text-black'>
+              className='absolute font-Noto  left-10 right-10 top-44 '>
+              <p className='mt-5 flex md:w-96  md:text-4xl font-light md:text-left text-black'>
                 Paving a Sustainable Path in the Castor World
               </p>
               <motion.button

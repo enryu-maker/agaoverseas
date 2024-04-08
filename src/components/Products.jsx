@@ -27,17 +27,15 @@ const Products = () => {
       className='flex items-center  max-w-full flex-col md:justify-between p-10 '>
       <div className='flex flex-col items-center justify-center gap-3 '>
         {/* Recent Post  */}
-        <h1 className=' text-3xl font-Montserrat text-cyan-500  '>
+        <h1 className=' md:text-3xl text-xl text-center font-Montserrat text-cyan-500  '>
           Committed to Quality, Consistent in Excellence
         </h1>
-        <p className=' font-Montserrat  w-full px-24 '>
+        <p className=' font-Montserrat text-center  w-full text-sm md:px-10 '>
           As castor oil manufacturer, we understand the importance of providing
           pure and safe castor oil products. Our commitment and determination in
           every manufacturing step is our way of communicating ‘we care’ for our
           end-users. With extensive research, we formulate products that meet
-          global quality standards. Our sole purpose is not to be merely known
-          as castor oil suppliers but suppliers of quality, excellence, and
-          satisfaction to our customers.
+          global quality standards.
         </p>
         <button className='mt-5  uppercase flex bg-white hover:bg-cyan-800 hover:text-white text-cyan-800 font-semibold  py-2 px-4 border border-cyan-500 transition-all ease-in-out delay-75 duration-75  rounded-full'>
           Explore All Products

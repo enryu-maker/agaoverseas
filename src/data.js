@@ -155,3 +155,62 @@ export const ContactData = [
     ],
   },
 ];
+
+export const FaqData = [
+  {
+    question: 'WHAT EXACTLY IS AGA OVERSEAS PVT.LTD ?',
+    answer:
+      'AGA OVERSEAS PVT. LTD. is a prestigious company engaged in Importing & Exporting a wide range of products. We provide superior quality products which are widely accepted by our clients at a reasonable price.',
+  },
+  {
+    question: 'WHERE IS YOUR COMPANY BASED IN INDIA ?',
+    answer:
+      'Our company is based out in Nashik, Maharashtra, India which is very close to JawaharlalNehru port Mumbai (BOMBAY) also known by Nhava Sheva, BOMBAY AIR CARGO - Chhatrapati Shivaji Maharaj International Airport Mumbai (BOMBAY) and Gujarat’s Mundra, Kandla port.',
+  },
+  {
+    question: 'DO YOU MANUFACTURE ALL THE PRODUCTS DISPLAYED ON THE WEBSITE ?',
+    answer:
+      'Yes, we are having tie-ups with leading manufacturers and sourcing agencies in all the different fields. We are having an expert team to check and ensure the quality of the products across the country.',
+  },
+  {
+    question: 'WHAT ARE YOUR TERMS OF PACKAGING ?',
+    answer:
+      'Standard packaging is available from the company and we are flexible in packaging but the Buyer can request for packaging according to their standard requirement.',
+  },
+  {
+    question: 'HOW DO I REQUEST A QUOTE/PRICE LIST/CATALOGUE ?',
+    answer:
+      'We request you to fill the quotation form mentioned on the website or you can also mail us as per the requirement.',
+  },
+  {
+    question: 'CAN I GET SOME SAMPLES ?',
+    answer:
+      'Yes, samples will be provided by us free of cost but the Shipping/Courier charge has to be paid by the buyer.',
+  },
+  {
+    question: 'WHAT ARE YOUR TERMS OF PAYMENT ?',
+    answer:
+      'Payment is accepted in US Dollars OR specified in the quotation sent to you.We Accept Letter of Credit (L/C) as Sight Letter of Credit for Bulk Orders. This payment term involves considerable Bank charges. Any bank charges as per the terms of Letter of Credit must be to the account of the Customer.We Expect Part Payment in Advance that you send a 30% value in advance for larger orders & balance payment payable on Ex Works. This payment term involves Bank charges which are payable by the Buyer. We Expect Full Advance Payment as is the most convenient for small orders as it minimizes the bank charges involved in other methods of payment. You may send T/T payment or Wire Transfer to our Bankers under intimation to us. Our Company also accepts Small Payment in the form of Western Union.',
+  },
+  {
+    question:
+      'DO YOU OFFER OTHER PRODUCTS APART FROM YOUR PRODUCT LISTED ON WEBSITE ?',
+    answer:
+      'Yes, we will offer other products also at the best price available as we are having tie-ups and contracts with several manufacturers. We will be HAPPY to provide guidance regarding your search.',
+  },
+  {
+    question: 'WHAT IS YOUR MODE OF SHIPMENT AND CHARGES ?',
+    answer:
+      'Shipment modes are Sea Freight and Air Freight. We also use Courier, Post, EMS, and other services upon request by the buyer. The shipping charges may vary according to the size of the shipment, destination, and Mode of dispatch. INCOTERM rates are quoted if you inform us of the exact quantity, destination, and mode of dispatch preferred by the Buyer.',
+  },
+  {
+    question: 'DO YOU HAVE ALL THE CERTIFICATIONS ?',
+    answer:
+      'Yes, we can share all the information regarding the certifications. It is requested you that make sure to check the country specification.',
+  },
+  {
+    question: 'HOW LONG IT WILL TAKE FOR YOU TO RESPOND OUR ENQUIRY ?',
+    answer:
+      'We are prompt and available 24X7 in all the chatting tools and video tools like Whatsapp, WeChat, Skype, E-mail, listed contact number on the website.',
+  },
+];
