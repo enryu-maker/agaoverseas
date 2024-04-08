@@ -6,9 +6,15 @@ import { IoMenu } from 'react-icons/io5';
 import { RxCross2 } from 'react-icons/rx';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import ContactForm from './ContactForm';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modal, setModal] = useState(false);
+
+  const HandleModal = () => {
+    setModal(!modal);
+  };
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -26,7 +32,7 @@ const Header = () => {
         className=' flex items-center p-2 uppercase  '>
         <NavLink to='/'>
           <img
-            src={'Logo.png'}
+            src={'https://i.ibb.co/FHnzTtF/Logo.png'}
             alt='Logo'
             className='w-16 h-16'
           />
@@ -44,7 +50,7 @@ const Header = () => {
             <BsChevronCompactDown className=' font-light' />
           </div>
 
-          <div className='absolute top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  hidden child bg-white	'>
+          <div className='absolute top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  md:hidden child bg-white	'>
             {AboutNavLinks.map((nav, index) => (
               <div key={index}>
                 <NavLink
@@ -65,7 +71,7 @@ const Header = () => {
             <BsChevronCompactDown className=' font-light' />
           </div>
 
-          <div className='absolute top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  hidden child bg-white	'>
+          <div className='absolute top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  md:hidden child bg-white	'>
             {ProductsNavLinks.map((nav, index) => (
               <>
                 <NavLink
@@ -103,6 +109,7 @@ const Header = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.25 }}
+          onClick={HandleModal}
           whileHover={{
             rotate: 60,
           }}
@@ -140,7 +147,7 @@ const Header = () => {
                 <BsChevronCompactDown className=' font-light' />
               </div>
 
-              <div className='absolute z-10 top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  hidden child bg-white	'>
+              <div className='absolute z-10 top-5 left-[-25px] md:flex gap-5 m-1  items-center justify-center flex-col w-[270px]  text-sm  p-1  hidden child bg-white	'>
                 {AboutNavLinks.map((nav, index) => (
                   <>
                     <NavLink
@@ -164,7 +171,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className='absolute  top-5 left-[-25px] flex gap-5 m-1  items-center justify-center flex-col w-[300px]  text-sm  p-1  hidden child bg-white	'>
+              <div className='absolute  top-5 left-[-25px] md:flex gap-5 m-1  items-center justify-center flex-col w-[300px]  text-sm  p-1  hidden child bg-white	'>
                 {ProductsNavLinks.map((nav, index) => (
                   <>
                     <NavLink
@@ -226,6 +233,28 @@ const Header = () => {
           </button>
         </div>
       </motion.div>
+
+      {/* Modal Contact */}
+      {modal && (
+        <motion.div
+          initial={{ y: -500, opacity: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.5 }}
+          className=' fixed flex items-center justify-center text-2xl top-0 right-0  w-full h-screen gap-5  bg-white z-50 '>
+          <>
+            <ContactForm />
+            <motion.button
+              whileHover={{
+                rotate: -90,
+              }}
+              whileTap={{ scale: 0.85 }}
+              className='absolute top-10 right-10 '
+              onClick={HandleModal}>
+              <RxCross2 className='text-[#19b8f1]    ' />
+            </motion.button>
+          </>
+        </motion.div>
+      )}
     </div>
   );
 };

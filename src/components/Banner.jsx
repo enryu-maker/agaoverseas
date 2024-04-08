@@ -34,7 +34,7 @@ const Banner = () => {
           transition={{ ease: 'linear', duration: 0.8, delay: 0.8 }}
           className='z-[-10] absolute '>
           <img
-            src='leaf.png'
+            src='https://i.ibb.co/wg1x771/leaf.png'
             alt=''
             className='w-[8rem] h-[8rem] rotate-45'
           />
@@ -49,7 +49,7 @@ const Banner = () => {
         </button>
         <div className='hidden md:block absolute z-[-10] right-0 top-1'>
           <img
-            src='parallax-right.webp'
+            src='https://i.ibb.co/pRHGY9N/parallax-right.webp'
             alt=''
             className='w-[10rem] h-[10rem]'
           />

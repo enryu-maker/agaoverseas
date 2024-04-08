@@ -59,7 +59,6 @@ const CommercialGrade = () => {
           </p>
         </div>
       </div>
-
       <Banner />
     </>
   );

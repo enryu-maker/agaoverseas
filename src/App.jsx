@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Screen/Home';
 import Header from './components/Header';
-import About from './Screen/About';
 import Blog from './Screen/Blog';
 import Faq from './Screen/Faq';
 import Contact from './Screen/Contact';
@@ -12,6 +11,8 @@ import RefinedGrade from './Screen/Products/RefinedGrade';
 import ColdPressed from './Screen/Products/ColdPressed';
 import Footer from './components/Footer';
 import Product from './Screen/Products/Product';
+import AboutOverview from './Screen/about/AboutOverview';
+import OurMission from './Screen/about/OurMission';
 
 function App() {
   return (
@@ -25,8 +26,14 @@ function App() {
       </Routes>
       <Routes>
         <Route
-          path='/about'
-          element={<About />}
+          path='/about/overview'
+          element={<AboutOverview />}
+        />
+      </Routes>
+      <Routes>
+        <Route
+          path='/about/mission'
+          element={<OurMission />}
         />
       </Routes>
       <Routes>

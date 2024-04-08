@@ -28,7 +28,7 @@ const Footer = () => {
         className='grid  md:grid-cols-4 grid-cols-2 gap-4 bg-[#262E3B] text-white md:p-12 p-5 Roboto'>
         <div>
           <img
-            src='Logo.png'
+            src='https://i.ibb.co/FHnzTtF/Logo.png'
             alt=''
             className='md:w-32 md:h-22 w-28 h-28 '
           />
