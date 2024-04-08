@@ -58,8 +58,8 @@ export const AboutNavLinks = [
     path: '/about/overview',
   },
   {
-    name: 'Our Mission',
-    path: '/about/mission',
+    name: 'Our Vision',
+    path: '/about/our-vision',
   },
 ];
 

@@ -1,11 +1,31 @@
 import React from 'react';
 import { BlogData } from '../../data';
 import Card from '../../components/Card';
+import { useEffect, useRef } from 'react';
+import { motion, useInView, useAnimation } from 'framer-motion';
 
 const Product = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start('visible');
+    }
+  }, [isInView, mainControls]);
   return (
     <>
-      <div className='flex items-center justify-around px-5'>
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className='flex items-center justify-around px-5'>
         <div className='flex flex-col gap-3 items-start justify-center'>
           <h1
             className='text-3xl
@@ -30,9 +50,18 @@ const Product = () => {
             alt=''
           />
         </div>
-      </div>
+      </motion.div>
       {/*  */}
-      <div className='flex items-center justify-center mt-2 flex-col gap-3 px-56'>
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className='flex items-center justify-center mt-2 flex-col gap-3 px-56'>
         <h1
           className='text-2xl
           font-Noto
@@ -54,7 +83,7 @@ const Product = () => {
           capabilities we are emerging as the leading castor oil derivatives
           manufacturer in India.
         </p>
-      </div>
+      </motion.div>
       <div className='grid md:grid-cols-3 p-5 gap-5 mt-5 mb-5 '>
         {BlogData.map((post, index) => (
           <Card

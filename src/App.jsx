@@ -12,7 +12,7 @@ import ColdPressed from './Screen/Products/ColdPressed';
 import Footer from './components/Footer';
 import Product from './Screen/Products/Product';
 import AboutOverview from './Screen/about/AboutOverview';
-import OurMission from './Screen/about/OurMission';
+import OurVision from './Screen/about/OurVision';
 
 function App() {
   return (
@@ -32,8 +32,8 @@ function App() {
       </Routes>
       <Routes>
         <Route
-          path='/about/mission'
-          element={<OurMission />}
+          path='/about/our-vision'
+          element={<OurVision />}
         />
       </Routes>
       <Routes>

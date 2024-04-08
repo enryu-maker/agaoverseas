@@ -220,9 +220,14 @@ const Header = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.25 }}
         className='md:hidden flex gap-2'>
-        <div className='flex items-center cursor-pointer border rounded-full border-cyan-400 hover:bg-[#19b8f1] '>
+        <motion.div
+          whileTap={{
+            rotate: -90,
+          }}
+          onClick={HandleModal}
+          className='flex items-center cursor-pointer border rounded-full border-cyan-400 hover:bg-[#19b8f1] '>
           <FaPaperPlane className='text-[#19b8f1] w-8 h-8 p-2 hover:text-white ' />
-        </div>
+        </motion.div>
         <div className='flex items-center  '>
           <button onClick={toggleNavbar}>
             {isOpen ? (
@@ -235,26 +240,35 @@ const Header = () => {
       </motion.div>
 
       {/* Modal Contact */}
-      {modal && (
-        <motion.div
-          initial={{ y: -500, opacity: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.5 }}
-          className=' fixed flex items-center justify-center text-2xl top-0 right-0  w-full h-screen gap-5  bg-white z-50 '>
-          <>
-            <ContactForm />
-            <motion.button
-              whileHover={{
-                rotate: -90,
-              }}
-              whileTap={{ scale: 0.85 }}
-              className='absolute top-10 right-10 '
-              onClick={HandleModal}>
-              <RxCross2 className='text-[#19b8f1]    ' />
-            </motion.button>
-          </>
-        </motion.div>
-      )}
+      {modal ? (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.25 }}
+            className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed top-10 inset-0 z-50 outline-none focus:outline-none'>
+            <div className='relative w-auto my-6 mx-auto max-w-4xl'>
+              {/*content*/}
+              <div className='border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
+                {/*header*/}
+                <motion.button
+                  whileHover={{
+                    rotate: -90,
+                  }}
+                  whileTap={{ scale: 0.85 }}
+                  className='p-1 ml-auto bg-transparent border-0 text-black opacity-50 float-right text-3xl leading-none font-semibold outline-none focus:outline-none'
+                  onClick={HandleModal}>
+                  <RxCross2 className='text-[#19b8f1] ' />
+                </motion.button>
+                {/*body*/}
+                <div className='relative p-6 flex-auto'>
+                  <ContactForm setModal={HandleModal} />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </>
+      ) : null}
     </div>
   );
 };

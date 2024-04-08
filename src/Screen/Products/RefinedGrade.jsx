@@ -18,7 +18,16 @@ const RefinedGrade = () => {
 
   return (
     <>
-      <div className='md:flex items-center justify-around p-10 gap-20'>
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className='md:flex items-center justify-around md:p-10 md:gap-20'>
         <div className='p-10 relative'>
           <img
             src='https://www.ambujasolvex.com/ast/uploads/2021/06/refined-castor-oil-1.webp'
@@ -28,11 +37,11 @@ const RefinedGrade = () => {
           <img
             src='https://i.ibb.co/1Xqg3v6/leaf-back.png'
             alt=''
-            className='absolute right-0 top-60 md:top-96 w-24 h-24 z-[-10] '
+            className='absolute right-0 top-20 md:top-96 w-24 h-24 z-[-10] '
           />
         </div>
 
-        <div className='flex flex-col gap-2 items-start justify-center w-[500px] '>
+        <div className='flex flex-col gap-2 items-start justify-center md:w-[500px] '>
           <h1
             className='text-3xl
           font-Noto
@@ -62,7 +71,7 @@ const RefinedGrade = () => {
             material for the manufacture of value-added castor oil derivatives.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className='flex items-center flex-col justify-center gap-2 mt-5 mb-5'>
         <h1
           className='text-3xl

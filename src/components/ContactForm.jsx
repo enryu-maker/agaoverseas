@@ -3,7 +3,7 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const mainControls = useAnimation();
@@ -15,18 +15,18 @@ const ContactForm = () => {
   }, [isInView, mainControls]);
 
   return (
-    <div className='grid p-20 gap-20'>
+    <div className='grid'>
       <motion.div
         ref={ref}
         variants={{
-          hidden: { opacity: 0, x: -500 },
+          hidden: { opacity: 0, x: -100 },
           visible: { opacity: 1, x: 0 },
         }}
         initial='hidden'
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}>
-        <h1 className='text-xl font-Noto font-light p-2 text-cyan-500'>
-          Send Us A Message
+        <h1 className='md:text-xl font-Noto font-light p-2 text-cyan-500'>
+          We'd Love to Address Your Queries
         </h1>
         <form className='py-10'>
           <div className='grid md:grid-cols-2 gap-2'>
@@ -67,6 +67,7 @@ const ContactForm = () => {
               ease: 'easeInOut',
               repeatType: 'loop',
             }}
+            onClick={props.setModal}
             className=' mt-5 w-full bg-white uppercase bg-transparent  text-cyan-800 hover:bg-cyan-400 font-semibold hover:text-white py-2 px-4 border border-cyan-500 rounded-full'>
             Submit
           </motion.button>
