@@ -125,7 +125,7 @@ export const ContactData = [
   {
     address:
       'Office No 8.MEZZAINNE FLOOR JAGADISH SANKUL Near KBT CIRCLE, THATTE NAGAR, GANGAPUR ROAD, NASHIK, Maharashtra 422005',
-    phone: '+91 8830025846',
+    phone: '+91 9307519621',
     email: 'info@agaoverseas.com',
     socialLinks: [
       {
