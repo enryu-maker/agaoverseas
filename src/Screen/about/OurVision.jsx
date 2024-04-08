@@ -16,13 +16,12 @@ const OurVision = () => {
   return (
     <div>
       <motion.div
-        ref={ref}
         variants={{
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
         }}
         initial='hidden'
-        animate={mainControls}
+        animate='visible'
         transition={{ duration: 0.5, delay: 0.25 }}
         className='md:flex items-center justify-around md:p-10 md:gap-20'>
         <div className='p-10 relative'>
