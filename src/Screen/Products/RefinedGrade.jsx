@@ -19,15 +19,14 @@ const RefinedGrade = () => {
   return (
     <>
       <motion.div
-        ref={ref}
         variants={{
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
         }}
         initial='hidden'
-        animate={mainControls}
+        animate='visible'
         transition={{ duration: 0.5, delay: 0.25 }}
-        className='md:flex items-center justify-around md:p-10 md:gap-20'>
+        className='md:flex items-center font-Poppins justify-around md:p-10 md:gap-20'>
         <div className='p-10 relative'>
           <img
             src='https://www.ambujasolvex.com/ast/uploads/2021/06/refined-castor-oil-1.webp'
@@ -44,7 +43,7 @@ const RefinedGrade = () => {
         <div className='flex flex-col gap-2 items-start justify-center md:w-[500px] '>
           <h1
             className='text-3xl
-          font-Noto
+          
           font-light
           p-2
           text-cyan-500'>
@@ -52,7 +51,7 @@ const RefinedGrade = () => {
           </h1>
           <p
             className='text-sm
-          font-Noto
+        
           font-light
           p-2
           '>
@@ -75,7 +74,7 @@ const RefinedGrade = () => {
       <div className='flex items-center flex-col justify-center gap-2 mt-5 mb-5'>
         <h1
           className='text-3xl
-          font-Noto
+       
           font-normal
           p-2
           text-cyan-500'>

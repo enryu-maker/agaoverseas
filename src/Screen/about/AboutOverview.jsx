@@ -24,11 +24,11 @@ const AboutOverview = () => {
         initial='hidden'
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className='md:flex items-center justify-around px-5 '>
+        className='md:flex items-center font-Poppins justify-around px-5 '>
         <div className='flex flex-col md:gap-5 items-start justify-center'>
           <h1
             className='md:text-3xl text-xl
-          font-Noto
+          
           font-light
           p-2
           text-cyan-500'>
@@ -36,7 +36,7 @@ const AboutOverview = () => {
           </h1>
           <p
             className='md:text-xl text-sm
-          font-Noto
+         
           font-light
           p-2
           '>

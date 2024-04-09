@@ -25,7 +25,7 @@ const Footer = () => {
         initial='hidden'
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className='grid  md:grid-cols-4 grid-cols-2 gap-4 bg-[#262E3B] text-white md:p-12 p-5 Roboto'>
+        className='grid  md:grid-cols-4 grid-cols-2 gap-4 bg-[#262E3B] text-white md:p-12 p-5 font-Poppins'>
         <div>
           <img
             src='https://i.ibb.co/FHnzTtF/Logo.png'
@@ -42,9 +42,7 @@ const Footer = () => {
         </div>
         <div>
           {/* Contact */}
-          <h1 className='text-lg uppercase font-semibold font-sans'>
-            Contact Info
-          </h1>
+          <h1 className='text-lg uppercase font-semibold '>Contact Info</h1>
           <span className=' inline-block w-[50px] h-[3px] bg-[#19b8f1] mb-2' />
           <div className='p-1'>
             {ContactData.map((item, index) => (

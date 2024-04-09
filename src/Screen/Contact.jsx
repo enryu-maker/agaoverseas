@@ -28,10 +28,11 @@ const Contact = () => {
         }}
         initial='hidden'
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}>
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className='hidden md:block'>
         <AddressMap />
       </motion.div>
-      <div className='grid md:grid-cols-2 p-10 gap-10'>
+      <div className='grid md:grid-cols-2 p-10 gap-10 font-Poppins'>
         <motion.div
           ref={ref}
           variants={{
@@ -41,7 +42,7 @@ const Contact = () => {
           initial='hidden'
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.25 }}>
-          <h1 className='text-xl font-Noto font-light p-2 text-cyan-500'>
+          <h1 className='text-xl font-light p-2 text-cyan-500'>
             Send Us A Message
           </h1>
           <form className='py-10'>
@@ -98,25 +99,23 @@ const Contact = () => {
           initial='hidden'
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className=' flex flex-col items-start'>
-          <h1 className='text-xl font-Noto font-light text-left p-2 text-cyan-500'>
+          className=' flex flex-col items-start font-Poppins'>
+          <h1 className='text-xl font-Poppins font-light text-left p-2 text-cyan-500'>
             Plant Address
           </h1>
-          <p className='text-sm font-Noto font-light text-left p-2 '>
+          <p className='text-sm font-light text-left p-2 '>
             Office No 8.JAGADISH SANKUL Near KBT CIRCLE, THATTE NAGAR, GANGAPUR
             ROAD, NASHIK, Maharashtra 422005
           </p>
-          <h2 className=' text-xl font-Noto font-light text-left p-2 text-cyan-500'>
+          <h2 className=' text-xl font-light text-left p-2 text-cyan-500'>
             Domestic Enquiry
           </h2>
-          <p className='text-sm font-Noto font-light text-left p-2'>
-            +91 9307519621
-          </p>
-          <h2 className=' flex items-center gap-2  text-xl font-Noto font-light text-left p-2 text-cyan-500'>
+          <p className='text-sm font-light text-left p-2'>+91 9307519621</p>
+          <h2 className=' flex items-center gap-2  text-xl font-light text-left p-2 text-cyan-500'>
             WhatsApp
             <FaWhatsappSquare className=' text-green-500' />
           </h2>
-          <p className='text-sm font-Noto font-semibold text-left p-2'>
+          <p className='text-sm font-semibold text-left p-2'>
             <Link
               to={
                 'https://api.whatsapp.com/message/SKJLJM4RLTUWG1?autoload=1&app_absent=0'
@@ -126,21 +125,21 @@ const Contact = () => {
               Join WhatsApp Link
             </Link>
           </p>
-          <h2 className=' flex items-center gap-2  text-xl font-Noto font-light text-left p-2 text-cyan-500'>
+          <h2 className=' flex items-center gap-2  text-xl  font-light text-left p-2 text-cyan-500'>
             International enquiry
           </h2>
-          <p className=' flex items-center gap-2 text-md text-black font-Noto font-semibold text-left p-2'>
+          <p className=' flex items-center gap-2 text-md text-black  font-semibold text-left p-2'>
             <MdCall className=' text-amber-950 w-5 h-5' />
             +91 8830025846
           </p>
-          <h2 className=' flex items-center gap-2  text-xl font-Noto font-light text-left p-2 text-cyan-500'>
+          <h2 className=' flex items-center gap-2  text-xl  font-light text-left p-2 text-cyan-500'>
             E-Mail
           </h2>
-          <p className=' flex items-center gap-2 text-md text-black font-Noto font-semibold text-left p-2'>
+          <p className=' flex items-center gap-2 text-md text-black  font-semibold text-left p-2'>
             <IoMailUnread className=' text-amber-950 w-5 h-5' />
             info@agaoverseas.com
           </p>
-          <p className=' flex items-center gap-2 text-md text-black font-Noto font-semibold text-left p-2'>
+          <p className=' flex items-center gap-2 text-md text-black font-semibold text-left p-2'>
             <IoMailUnread className=' text-amber-950 w-5 h-5' />
             sales@agaoverseas.com
           </p>

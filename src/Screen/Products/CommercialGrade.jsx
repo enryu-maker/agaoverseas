@@ -24,7 +24,7 @@ const CommercialGrade = () => {
         initial='hidden'
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className='md:flex items-center justify-around md:p-10 md:gap-20'>
+        className='md:flex items-center font-Poppins justify-around md:p-10 md:gap-20'>
         <div className='p-10 relative'>
           <img
             src='https://www.ambujasolvex.com/ast/uploads/2021/06/brown-castor-oil.webp'
@@ -41,7 +41,7 @@ const CommercialGrade = () => {
         <div className='flex flex-col gap-2 items-start justify-center md:w-[500px] '>
           <h1
             className='text-3xl
-          font-Noto
+          
           font-light
           p-2
           text-cyan-500'>
@@ -49,7 +49,7 @@ const CommercialGrade = () => {
           </h1>
           <p
             className='text-sm
-          font-Noto
+    
           font-light
           p-2
           '>
@@ -64,7 +64,7 @@ const CommercialGrade = () => {
           </p>
           <p
             className='text-sm
-          font-Noto
+      
           font-light
           p-2
           '>

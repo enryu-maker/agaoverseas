@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       Montserrat: ['Montserrat', 'sans-serif'],
       Noto: ['Noto Serif', 'sans-serif'],
+      Poppins: ['Poppins', 'sans-serif'],
     },
   },
   plugins: [],

@@ -28,13 +28,13 @@ const Card = (props) => {
         <img
           src={props.img}
           alt={props.title}
-          className='w-full h-[249.59px] object-cover rounded-xl cursor-pointer '
+          className='w-full h-[249.59px] object-cover rounded-xl font-Poppins cursor-pointer '
         />
       </motion.div>
 
       <div className='flex flex-col p-5 gap-2 '>
         <p className=' text-slate-400'>{props.time}</p>
-        <p className='text-lg font-Noto text-left text-slate-500 hover:text-cyan-500 cursor-pointer'>
+        <p className='text-lg  text-left text-slate-500 hover:text-cyan-500 cursor-pointer'>
           {props.description}...
         </p>
         <motion.button className='flex hover:text-cyan-500 '>

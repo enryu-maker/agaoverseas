@@ -25,7 +25,7 @@ const ContactForm = (props) => {
         initial='hidden'
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}>
-        <h1 className='md:text-xl font-Noto font-light p-2 text-cyan-500'>
+        <h1 className='md:text-xl font-Poppins font-light p-2 text-cyan-500'>
           We'd Love to Address Your Queries
         </h1>
         <form className='py-10'>

@@ -24,13 +24,13 @@ const Products = () => {
       initial='hidden'
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className='flex items-center  max-w-full flex-col md:justify-between p-10 '>
+      className='flex items-center  max-w-full flex-col md:justify-between p-10 font-Poppins '>
       <div className='flex flex-col items-center justify-center gap-3 '>
         {/* Recent Post  */}
-        <h1 className=' md:text-3xl text-xl text-center font-Montserrat text-cyan-500  '>
+        <h1 className=' md:text-3xl text-xl text-center  text-cyan-500  '>
           Committed to Quality, Consistent in Excellence
         </h1>
-        <p className=' font-Montserrat text-center  w-full text-sm md:px-10 '>
+        <p className='  text-center  w-full text-md md:px-10 '>
           As castor oil manufacturer, we understand the importance of providing
           pure and safe castor oil products. Our commitment and determination in
           every manufacturing step is our way of communicating ‘we care’ for our

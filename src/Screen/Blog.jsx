@@ -20,8 +20,8 @@ const Blog = () => {
   }, [isInView, mainControls]);
 
   return (
-    <div className='flex items-center justify-center flex-col p-12  '>
-      <h1 className='text-2xl font-Noto font-light p-2 text-cyan-500'>
+    <div className='flex items-center justify-center font-Poppins flex-col p-12  '>
+      <h1 className='text-2xl  font-light p-2 text-cyan-500'>
         The Benefits Of Castor Oil To Hair & Skin
       </h1>
       <p className='p-2  text-slate-500'>{date}</p>
@@ -59,7 +59,7 @@ const Blog = () => {
         initial='hidden'
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className=' text-2xl font-Noto text-cyan-600 py-10 '>
+        className=' text-2xl text-cyan-600 py-10 '>
         Discover the Castor World
       </motion.div>
       <motion.div

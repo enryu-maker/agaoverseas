@@ -23,7 +23,7 @@ const Banner = () => {
       initial='hidden'
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className='flex items-center justify-around mt-5 mb-5 relative px-5 '>
+      className='flex items-center justify-around mt-5 mb-5 relative md:px-5 px-12  font-Poppins'>
       <div>
         <motion.div
           ref={ref}
@@ -39,7 +39,7 @@ const Banner = () => {
             className='w-[8rem] h-[8rem] rotate-45'
           />
         </motion.div>
-        <p className='flex items-center text-4xl w-96 italic  font-Montserrat line-clamp-3'>
+        <p className='flex items-center md:text-4xl md:w-96 h-40 italic font-Poppins line-clamp-3'>
           We know Castor Oil. Learn how we can help you with our expertise.
         </p>
       </div>

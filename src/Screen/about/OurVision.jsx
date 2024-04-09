@@ -14,7 +14,7 @@ const OurVision = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div>
+    <div className=' font-Poppins'>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -40,7 +40,7 @@ const OurVision = () => {
         <div className='flex flex-col gap-2 items-start justify-center md:w-[500px] '>
           <h1
             className='text-3xl
-          font-Noto
+          
           font-light
           p-2
           text-cyan-500'>
@@ -48,7 +48,7 @@ const OurVision = () => {
           </h1>
           <p
             className='text-sm
-          font-Noto
+          
           font-light
           p-2
           '>
@@ -58,7 +58,7 @@ const OurVision = () => {
           </p>
           <h1
             className='text-3xl
-          font-Noto
+        
           font-light
           p-2
           text-cyan-500'>
@@ -66,7 +66,7 @@ const OurVision = () => {
           </h1>
           <p
             className='text-sm
-          font-Noto
+         
           font-light
           p-2
           '>
@@ -98,7 +98,7 @@ const OurVision = () => {
         <div className='flex flex-col gap-2 md:items-start  justify-center  '>
           <h1
             className='md:text-3xl text-xl
-          font-Noto
+          
           font-light
           p-2
           text-cyan-500'>
@@ -106,7 +106,7 @@ const OurVision = () => {
           </h1>
           <p
             className='text-sm
-          font-Noto
+         
           font-light
           p-2
           '>
@@ -116,7 +116,7 @@ const OurVision = () => {
 
           <p
             className='text-sm
-          font-Noto
+          
           font-light
           p-2
           '>
@@ -124,7 +124,7 @@ const OurVision = () => {
           </p>
           <p
             className='text-sm
-          font-Noto
+         s
           font-light
           p-2
           '>
@@ -133,7 +133,7 @@ const OurVision = () => {
           </p>
           <p
             className='text-sm
-          font-Noto
+      s
           font-light
           p-2
           '>
@@ -142,7 +142,7 @@ const OurVision = () => {
           </p>
           <p
             className='text-sm
-          font-Noto
+     
           font-light
           p-2
           '>
@@ -151,7 +151,7 @@ const OurVision = () => {
           </p>
           <p
             className='text-sm
-          font-Noto
+          
           font-light
           p-2
           '>
@@ -160,7 +160,7 @@ const OurVision = () => {
           </p>
           <p
             className='text-sm
-          font-Noto
+       
           font-light
           p-2
           '>

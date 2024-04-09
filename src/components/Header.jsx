@@ -20,31 +20,31 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: 'en',
-        autoDisplay: false,
-      },
-      'google_translate_element'
-    );
-  };
-  useEffect(() => {
-    let addScript = document.createElement('script');
-    addScript.setAttribute(
-      'src',
-      '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: 'en',
+  //       autoDisplay: false,
+  //     },
+  //     'google_translate_element'
+  //   );
+  // };
+  // useEffect(() => {
+  //   let addScript = document.createElement('script');
+  //   addScript.setAttribute(
+  //     'src',
+  //     '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+  //   );
+  //   document.body.appendChild(addScript);
+  //   window.googleTranslateElementInit = googleTranslateElementInit;
+  // }, []);
 
   return (
     <>
       <div
         className='bg-black relative'
         id='google_translate_element'></div>
-      <div className='flex items-center justify-between px-10 bg-white sticky top-0 z-40 '>
+      <div className='flex items-center justify-between px-10 font-Poppins bg-white sticky top-0 z-40 '>
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -61,7 +61,7 @@ const Header = () => {
             />
           </NavLink>
         </motion.div>
-        <div className='hidden md:flex  items-center gap-10 font-Montserrat font-light '>
+        <div className='hidden md:flex  items-center gap-10 font-Poppins font-light '>
           <NavLink
             className='headerLink'
             to='/'>

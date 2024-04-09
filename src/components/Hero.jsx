@@ -49,7 +49,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 1, delay: 0.25 }}
-              className='absolute top-56  left-10 font-Noto right-10 flex flex-col items-center justify-center'>
+              className='absolute top-56  left-10  font-Poppins right-10 flex flex-col items-center justify-center'>
               <p className='mt-5 md:text-4xl font-light text-center flex text-black drop-shadow-md '>
                 <span className=' text-sky-500'>AGA</span> OVERSEAS PVT. LTD.
               </p>
@@ -79,8 +79,8 @@ const Hero = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 0.8, delay: 0.8 }}
-              className='absolute font-Noto left-10 right-10 top-44 '>
-              <p className='mt-5 md:text-4xl font-light  md:w-96 text-center text-black'>
+              className='absolute font-Poppins left-10 right-10 top-44 '>
+              <p className='mt-5 md:text-4xl font-light  md:w-96 text-left text-black'>
                 Comprehensive Range of Castor Oil Products for Diverse
                 Industries
               </p>
@@ -111,7 +111,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: 'linear', duration: 1, delay: 1 }}
-              className='absolute font-Noto  left-10 right-10 top-44 '>
+              className='absolute font-Poppins  left-10 right-10 top-44 '>
               <p className='mt-5 flex md:w-96  md:text-4xl font-light md:text-left text-black'>
                 Paving a Sustainable Path in the Castor World
               </p>

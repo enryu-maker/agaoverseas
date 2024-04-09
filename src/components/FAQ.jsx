@@ -26,12 +26,12 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
       className={'faq ' + (faq.open ? 'open' : '')}
       key={index}
       onClick={() => toggleFAQ(index)}>
-      <div className='faq-question font-Noto'>{faq.question}</div>
+      <div className='faq-question font-Poppins'>{faq.question}</div>
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.25, easing: 'linear' }}
-        className='faq-answer font-Noto'>
+        className='faq-answer font-Poppins'>
         {faq.answer}
       </motion.div>
     </motion.div>
